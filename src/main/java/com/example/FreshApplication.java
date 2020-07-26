@@ -38,7 +38,7 @@ public class FreshApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... params) throws Exception {
-		User admin = new User();
+		/*User admin = new User();
 		admin.setFirstName("admin");
 		admin.setLastName("admin");
 		admin.setUsername("admin");
@@ -69,7 +69,7 @@ public class FreshApplication implements CommandLineRunner {
 		agent.setMobile("9078986876");
 		agent.setRoles(new ArrayList<Role>(Arrays.asList(Role.ROLE_AGENT)));
 
-		userService.register(agent);
+		userService.register(agent);*/
 
 	}
 
