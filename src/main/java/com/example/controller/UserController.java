@@ -13,7 +13,7 @@ import java.security.Principal;
 import java.util.Collections;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+//@CrossOrigin("http://localhost:4200")
 @RequestMapping("/v1/freshdesk/accounts")
 public class UserController {
 
