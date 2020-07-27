@@ -31,6 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/v1/freshdesk/ticket/**").permitAll()
                 .antMatchers("/v1/freshdesk/admin/**").permitAll()
                 .antMatchers("/v1/freshdesk/contact/**").permitAll()
+                .antMatchers("/v1/freshdesk/**").permitAll()
                 .anyRequest().authenticated();
              //   .and().logout()
                // .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
