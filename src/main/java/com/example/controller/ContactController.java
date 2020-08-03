@@ -76,7 +76,7 @@ public class ContactController {
                 .findAll());
     }
     @GetMapping("/tickets")
-    @PreAuthorize("hasAnyRole('ROLE_USER','ROLE_ADMIN','ROLE_AGENT)")
+    @PreAuthorize("hasAnyRole('ROLE_USER','ROLE_ADMIN','ROLE_AGENT')")
     public ResponseEntity<DataCollection> readtickets(int id) {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

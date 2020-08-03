@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AgentRepository extends JpaRepository<AgentEntity,Integer>
 {
-    Boolean existsByUsername(String username);
+    Boolean existsByContacts(String contacts);
     AgentEntity findById(int id);
     List<AgentEntity>findAll();
 }
