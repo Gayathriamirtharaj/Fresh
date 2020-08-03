@@ -35,7 +35,7 @@ public class TicketEntity {
 
     private String query;
 
-    private Integer assignee_Id;
+    private Integer assigneeId;
 
   //  @ElementCollection(fetch = FetchType.EAGER)
   //  @CollectionTable(name = "user_contacts",

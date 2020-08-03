@@ -15,7 +15,7 @@ public class Ticket
     private Integer username;
     private String query;
     private String contact;
-    private Integer assignee_Id;
+    private Integer assigneeId;
 
 
 }
