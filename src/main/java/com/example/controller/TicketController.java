@@ -23,7 +23,7 @@ public class TicketController {
     @PostMapping("/ticket")
     public ResponseEntity create(@RequestBody TicketEntity ticket)
     {
-        return ticketService.create(ticket);
+        return (ResponseEntity) ticketService.create(ticket);
         //throw new ResponseStatusException(HttpStatus.OK,"created success");
     }
 
