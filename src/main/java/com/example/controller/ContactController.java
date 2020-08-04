@@ -33,9 +33,9 @@ public class ContactController {
     @Autowired
     private ContactService contactService;
     private TicketService ticketService;
-    private ContactRepository contactRepository;
-    private TicketRepository ticketRepository;
-    private AgentRepository agentRepository;
+    private final ContactRepository contactRepository;
+    private final TicketRepository ticketRepository;
+    private final AgentRepository agentRepository;
     TicketEntity ticket;
     @Autowired
     public ContactController(ContactRepository contactRepository,TicketRepository ticketRepository,AgentRepository agentRepository)

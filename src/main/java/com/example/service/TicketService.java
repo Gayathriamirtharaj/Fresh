@@ -21,7 +21,7 @@ import org.springframework.web.server.ResponseStatusException;
 public class TicketService {
 
     private static TicketRepository ticketRepository;
-    private ContactRepository contactRepository;
+    private final ContactRepository contactRepository;
     private AgentRepository agentRepository;
     @Autowired
     private ModelMapper modelMapper;

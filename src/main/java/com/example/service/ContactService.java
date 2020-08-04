@@ -17,17 +17,14 @@ import java.util.Optional;
 @Service
 
 public class ContactService {
-    private TicketRepository ticketRepository;
-    private ContactRepository contactRepository;
-    private AgentRepository agentRepository;
-    private UserRepository userRepository;
+    private final ContactRepository contactRepository;
+    private final AgentRepository agentRepository;
+
     @Autowired
     public ContactService(ContactRepository contactRepository, AgentRepository agentRepository,TicketRepository ticketRepository,UserRepository userRepository)
     {
         this.contactRepository=contactRepository;
         this.agentRepository=agentRepository;
-        this.ticketRepository=ticketRepository;
-        this.userRepository=userRepository;
     }
     public synchronized  ResponseEntity makeagent(ContactEntity contact)
     {
