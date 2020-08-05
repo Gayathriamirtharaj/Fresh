@@ -17,6 +17,8 @@ public interface TicketRepository extends JpaRepository<TicketEntity,Integer> {
 
     @Override
     List<TicketEntity> findAll();
-    List<TicketEntity> findByemail(String email);
-    
+
+    //@Override
+    List<TicketEntity> findByassigneeId(Integer assigneeId);
+
 }

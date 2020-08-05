@@ -20,6 +20,10 @@ public class TicketController {
 
     private TicketRepository ticketRepository;
 
+    public TicketController(TicketRepository ticketRepository) {
+        this.ticketRepository=ticketRepository;
+    }
+
     @PostMapping("/ticket")
     public ResponseEntity create(@RequestBody TicketEntity ticket)
     {

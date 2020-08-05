@@ -15,6 +15,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.ArrayList;
+
 @Service
 @Transactional
 
@@ -71,6 +73,11 @@ public class TicketService {
                         System.out.println(ticketRepository.getOne(id));
         TicketEntity tickets = ticketRepository.getOne(id);
         return new ResponseEntity(ticketRepository.getOne(id), HttpStatus.OK);
+
+    }
+    public synchronized ArrayList<TicketEntity> list(int assigneeId)
+    {
+        return new ArrayList<TicketEntity>(ticketRepository.findByassigneeId(assigneeId));
 
     }
 

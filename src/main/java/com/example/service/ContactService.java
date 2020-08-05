@@ -95,11 +95,11 @@ public class ContactService {
             agentEntity.setEmail(contactEntity.getEmail());
 
             agentRepository.save(agentEntity);
-            return "Agent created";
+
         }
         else
         {
-            throw new ServiceException("Unable to make Agent",HttpStatus.NOT_FOUND);
+            throw new ServiceException("unable to make agent ",HttpStatus.NOT_FOUND);
         }
     }*/
 
